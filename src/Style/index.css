@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(31, 30, 30, 0.74);
+    background-image: url('/img/bghm.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Roboto;
+    overflow-x: hidden;
+  }
+  
+  .home-background {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home-page {
+    margin-top: 5%;
+    text-align: center;
+  }
+  
+  .home-content {
+    margin: 20px;
+  }
+
+  .home-photo {
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+  }
+  
+  h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: white;
+  }
+
+  .about-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .about-button:hover {
+    background-color: #0056b3;
+  }
+  
+/*  */
+  
+.about-page {
+  padding: 5rem;
+  margin-top: 2rem;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem; /* Tambahkan margin bawah agar ada jarak antara konten */
+}
+
+.about-left, .about-left2 {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.about-right {
+  flex: 2;
+}
+
+.about-right2 {
+  flex: 1;
+  margin-left: auto; /* Memastikan gambar di kanan */
+}
+
+.about-right h2 {
+  font-family: "Dancing Script", cursive;
+  color: white;
+  font-weight: 700;
+  font-size: xx-large;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.about-right h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -9%;
+  width: 100%;
+  height: 19px;
+  background-color: rgba(0, 0, 0, 0.575);
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.about-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-image2 {
+  border-radius: 30px;
+  max-width: 100%;
+  height: auto;
+}
+
+.about-box {
+  margin-top: 1px;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 10px;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease-in-out;
+}
+
+.slide-in-right {
+  animation: slideInRight 1s ease-in-out;
+}
+
+.slide-out-left {
+  animation: slideOutLeft 1s ease-in-out;
+}
+
+.slide-out-right {
+  animation: slideOutRight 1s ease-in-out;
+}
+
+.about-left, .about-left2 {
+  animation: slideInLeft 1s ease-in-out;
+}
+
+.about-right, .about-right2 {
+  animation: slideInRight 1s ease-in-out;
+}
+
+
+
+/* Styling for Pendidikan component */
+
+Pendidikan-page{
+  margin-top: 20%;
+}
+.pendidikan-page {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9); /* Background abu dengan efek blur */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow untuk efek raised */
+  max-width: 1000px; /* Atur lebar maksimum sesuai kebutuhan */
+  margin: 0 auto; /* Untuk membuat konten berada di tengah */
+}
+
+.logo-sekolah {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.logo-img {
+  max-width: 100px; /* Atur ukuran maksimum logo sekolah */
+  height: auto;
+  border-radius: 5px;
+}
+
+.keterangan {
+  flex: 2;
+}
+
+.keterangan h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.keterangan p {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* COntacttttttt */
+
+.contact-page {
+  display: flex;
+  height: 100vh;
+  padding: 5rem;
+  background-color: rgba(31, 30, 30, 0.74);
+}
+
+.contact-left {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.contact-right {
+  flex: 1;
+  color: white;
+}
+
+.contact-right h2 {
+  font-family: 'Dancing Script', cursive;
+  color: white;
+  font-weight: 700;
+  font-size: xx-large;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+
+}
+
+.contact-right h2::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -9%;
+  width: 100%;
+  height: 19px;
+  background-color: rgba(0, 0, 0, 0.575);
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  background-color: rgba(128, 128, 128, 0.5); /* Background abu-abu dengan opacity */
+  backdrop-filter: blur(5px); /* Efek blur */
+  border-radius: 10px; /* Border radius */
+  padding: 1rem;
+}
+
+.contact-icon {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}

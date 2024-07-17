@@ -1,0 +1,81 @@
+.slider-container {
+    width: 80%;
+    margin: 80px auto 0; /* Margin top disesuaikan agar di bawah navbar */
+    padding: 2rem 0;
+  }
+  
+  .slick-slide {
+    opacity: 0.3; /* Default opacity untuk slide */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    width: 50%;
+    height: auto;
+  }
+  
+  .slick-center {
+    opacity: 10; /* Opacity penuh untuk slide tengah */
+    transform: scale(1); /* Membesarkan slide tengah */
+  }
+  
+  .slick-center img {
+    filter: blur(); /* Menghapus blur pada slide tengah */
+  }
+  
+  .slick-slide img {
+    display: block;
+    margin: 0 auto;
+    width: 90%; /* Ukuran gambar sedikit lebih besar */
+    height: auto;
+    filter: none; /* Menambahkan blur pada slide yang tidak ditampilkan di tengah */
+    transition: filter 2s ease;
+  }
+  
+  .slick-prev,
+  .slick-next {
+    z-index: 1;
+  }
+  
+  .slick-dots li button:before {
+    color: rgb(255, 255, 255);
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: black;
+  }
+  
+
+  .education-history {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .education-item {
+    width: calc(100% - 10px); /* Lebih kecilkan sedikit dari 33% untuk memberi jarak */
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ffffff8f;
+    backdrop-filter: blur(10px);
+    border: 1px solid #ffffff85;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+  }
+  
+  .education-item .school-logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  
+  .education-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .education-item p {
+    font-size: 0.9rem;
+    color: #666;
+  }
