@@ -19,18 +19,17 @@ const Sertif = () => {
     {
       school: 'SMP Ibnu Aqil',
       description: 'LULUS pada 2022',
-      logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzPXaJkOMSMetTxJ3HN7JR_W-5wU43klIYdA&s', // Gantilah dengan path logo yang sesuai
+      logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzPXaJkOMSMetTxJ3HN7JR_W-5wU43klIYdA&s',
     },
     {
-      school: 'SMK Neger 1 Ciomas',
+      school: 'SMK Negeri 1 Ciomas',
       description: 'Sekolah Sekarang',
-      logo: '/img/SMK.jpeg', // Gantilah dengan path logo yang sesuai
+      logo: '/img/SMK.jpeg',
     },
-    // Tambahkan lebih banyak data sekolah sesuai kebutuhan
   ];
 
   return (
-    <div className="slider-container">
+    <div id="sertifikat" className="slider-container">
       <Slider {...settings}>
         <div>
           <img src="/img/serti1.jpg" alt="Sertifikat 1" className="slider-image" />

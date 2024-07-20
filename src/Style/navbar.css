@@ -1,18 +1,20 @@
+/* Style untuk navbar */
 .navbar {
   position: fixed;
-  top: 20px; /* Jarak dari atas layar */
-  left: 50%; /* Posisi di tengah horizontal */
+  top: 20px;
+  left: 50%;
   transform: translateX(-50%);
-  width: 90%; /* Atau sesuaikan dengan lebar yang Anda inginkan */
+  width: 90%;
   background-color: rgba(87, 87, 87, 0.247);
-  backdrop-filter: blur(10px); /* Efek blur */
+  backdrop-filter: blur(10px);
   padding: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 30px; /* Border radius untuk tampilan kapsul */
+  border-radius: 30px;
   z-index: 1000;
   display: flex;
-  justify-content: space-between; /* Mengatur agar elemen di dalam navbar berada di sisi kiri dan kanan */
-  align-items: center; /* Posisikan elemen secara vertikal di tengah */
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
 }
 
 .navbar-menu {
@@ -32,12 +34,10 @@
   padding: 0.5rem 1rem;
   position: relative;
   transition: color 0.8s ease;
- 
 }
 
 .navbar-menu a.active {
   color: white;
-  
 }
 
 .navbar-menu a::after {
@@ -58,5 +58,57 @@
 .navbar-menu a.active::after {
   transform: scaleX(1);
   transform-origin: bottom left;
-  
+}
+
+/* Tombol toggle */
+.navbar-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    left: 0;
+    transform: none;
+    padding: 0.5rem;
+  }
+
+  .navbar-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(87, 87, 87, 0.247);
+    border-radius: 30px;
+    padding: 0.5rem 0;
+    box-shadow: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: max-height 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .navbar-menu.open {
+    max-height: 500px; /* Atur tinggi maksimum sesuai kebutuhan */
+  }
+
+  .navbar-menu li {
+    margin: 0.5rem 0;
+  }
+
+  .navbar-menu a {
+    padding: 0.5rem;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
 }

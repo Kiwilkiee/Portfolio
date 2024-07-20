@@ -6,9 +6,9 @@ import '../Style/index.css';
 
 function Contact() {
   return (
-    <div className="contact-page">
+    <div id='kontak' className="contact-page">
       <div className="contact-left">
-        <MapContainer center={[-6.587479097448345, 106.7589154921992]} zoom={10} style={{ height: '80%', width: '100%' }}>
+        {/* <MapContainer center={[-6.587479097448345, 106.7589154921992]} zoom={10} style={{ height: '100%', width: '100%' }}>
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
@@ -17,7 +17,7 @@ function Contact() {
               Lokasi Saya
             </Popup>
           </Marker>
-        </MapContainer>
+        </MapContainer> */}
       </div>
       <div className="contact-right">
         <h2>Kontak Saya</h2>
