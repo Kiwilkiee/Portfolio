@@ -12,7 +12,10 @@ body {
   background-position: center;
   font-family: Roboto;
   overflow-x: hidden;
+  border: 2px solid black;
+  box-sizing: border-box;
 }
+
 
 /* Home Page */
 .home-background {
@@ -50,16 +53,19 @@ h1 {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   color: white;
-  background-color: #007bff;
+  background-color:  #008cff;
+  box-shadow: 0 0 8px 1px #00d2eed8;
   border: none;
-  border-radius: 5px;
+  border-radius: 30px;
   cursor: pointer;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.9s ease;
 }
 
 .about-button:hover {
-  background-color: #0056b3;
+  background-color: #ffffff;
+  color: #00d3ee;
+  box-shadow: 0 0 8px 1px #ffffffd8;
 }
 
 /* Social Icons */
@@ -238,15 +244,12 @@ h1 {
 /* Contact Component */
 .contact-page {
   display: flex;
-  height: 100vh;
-  padding: 5rem;
+  
+  padding: 20px;
   background-color: rgba(31, 30, 30, 0.74);
 }
 
-.contact-left {
-  flex: 1;
-  margin-right: 2rem;
-}
+
 
 .contact-right {
   flex: 1;

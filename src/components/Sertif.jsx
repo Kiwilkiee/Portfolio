@@ -9,7 +9,7 @@ const Sertif = () => {
     dots: true,
     infinite: true,
     speed: 1000,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: true,
     centerPadding: '1%',

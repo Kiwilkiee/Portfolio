@@ -4,11 +4,12 @@ import '../Style/index.css';
 import About from './About';
 import Contact from './Contact';
 import Slider from 'react-slick';
+import Navbar from './Navbar';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../Style/slider.css'; 
 import { FaInstagram, FaFacebookF, FaGithub, FaEnvelope } from 'react-icons/fa';
-
+  
 function Home() {
   const aboutRef = useRef(null);
 
@@ -57,22 +58,22 @@ function Home() {
   
   return (
     <div name='home' className="home-background">
+      
+      <Navbar />
+
       <div className="home-page">
         <div className="home-content">
           <img src="/img/wldn.jpg" alt="Wildan Putra Dwi Alfaris" className="home-photo" />
           <h1>Wildan Putra Dwi Alfaris</h1>
           <h2>WEB DEVELOPER</h2>
           <div className="social-icons">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://www.instagram.com/wldnptr.da_/" target="_blank" rel="noopener noreferrer" className="social-icon">
               <FaInstagram />
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-              <FaFacebookF />
-            </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://github.com/Kiwilkiee" target="_blank" rel="noopener noreferrer" className="social-icon">
               <FaGithub />
             </a>
-            <a href="mailto:someone@example.com?subject=Inquiry&body=Hello,%20I%20would%20like%20to%20get%20in%20touch." className="social-icon">
+            <a href="mailto:wildanputradwialfariz@gmail.com" className="social-icon">
               <FaEnvelope />
             </a>
           </div>
@@ -82,11 +83,11 @@ function Home() {
         </div>
       </div>
 
-      <Element name="about">
-        <div ref={aboutRef}>
-          <About />
-        </div>
-      </Element>
+        <Element name="about">
+          <div ref={aboutRef}>
+            <About />
+          </div>
+        </Element>
 
       <div id="sertifikat" className="slider-container">
         <Slider {...settings}>

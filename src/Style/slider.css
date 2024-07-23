@@ -1,7 +1,7 @@
 .slider-container {
     width: 80%;
     margin: 80px auto 0; /* Margin top disesuaikan agar di bawah navbar */
-    padding: 2rem 0;
+    padding: 5rem 0;
   }
   
   .slick-slide {
@@ -23,7 +23,7 @@
   .slick-slide img {
     display: block;
     margin: 0 auto;
-    width: 90%; /* Ukuran gambar sedikit lebih besar */
+    width: 100%; /* Ukuran gambar sedikit lebih besar */
     height: auto;
     filter: none; /* Menambahkan blur pada slide yang tidak ditampilkan di tengah */
     transition: filter 2s ease;
